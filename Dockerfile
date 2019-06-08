@@ -11,7 +11,7 @@ RUN \
     python-dev \
     g++ && \
   # Get plex_autoscan
-  git clone --depth 1 --single-branch https://github.com/l3uddz/plex_autoscan.git /plex_autoscan && \
+  git clone -b feature/crypt-decoder  --depth 1 --single-branch https://github.com/m1lkman/plex_autoscan.git /plex_autoscan && \
   # Install/update pip and requirements
   pip install --no-cache-dir --upgrade pip setuptools wheel && \
   # PIP upgrade bug https://github.com/pypa/pip/issues/5221
